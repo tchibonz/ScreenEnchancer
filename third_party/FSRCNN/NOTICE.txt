@@ -1,0 +1,6 @@
+The neural upscaling shaders in app/src/main/assets/shaders/ (small_*.frag, full_*.frag) embed
+the pretrained weights of FSRCNN-small_x2 and FSRCNN_x2 from
+https://github.com/Saafke/FSRCNN_Tensorflow (Apache License 2.0, see LICENSE-Apache-2.0.txt).
+FSRCNN: Dong, Loy, Tang, "Accelerating the Super-Resolution Convolutional Neural Network", ECCV 2016.
+The shaders were generated from the .pb files by tools/gen_shaders.py (changed form: weights
+converted to GLSL constants).
